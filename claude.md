@@ -34,3 +34,11 @@ feat: add user authentication
 fix: resolve navigation issue
 docs: update README
 chore: configure project
+
+
+## Code Quality
+
+- Use semantic HTML where applicable.
+- Keep JavaScript modular.
+- Prefer reusable components and functions.
+- Test changes before committing.
