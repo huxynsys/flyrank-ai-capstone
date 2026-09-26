@@ -1,0 +1,11 @@
+{
+  "name": "flyrank-ai-capstone",
+  "version": "1.0.0",
+  "description": "AI-assisted capstone project for the FlyRank internship track.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}

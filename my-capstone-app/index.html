@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Profile Settings</h1>
+        <p class="form-intro">Update your personal information.</p>
+
+        <div id="form-status" class="form-status" role="status" aria-live="polite" hidden>
+            Your profile settings have been saved.
+        </div>
+
+        <form id="profile-settings-form" novalidate>
+            <div class="form-group">
+                <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="fullName"
+                    autocomplete="name"
+                    placeholder="Jane Doe"
+                    required
+                    aria-describedby="full-name-error"
+                >
+                <p class="field-error" id="full-name-error" hidden></p>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="jane@example.com"
+                    required
+                    aria-describedby="email-error"
+                >
+                <p class="field-error" id="email-error" hidden></p>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea
+                    id="bio"
+                    name="bio"
+                    rows="4"
+                    maxlength="160"
+                    placeholder="Tell us a little about yourself"
+                    aria-describedby="bio-hint bio-error"
+                ></textarea>
+                <p class="field-hint" id="bio-hint">
+                    <span id="bio-count">160</span> characters remaining
+                </p>
+                <p class="field-error" id="bio-error" hidden></p>
+            </div>
+
+            <button type="submit" class="btn-submit">Save Changes</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
